@@ -10,6 +10,7 @@ import { EditPost } from "./Posts/EditPost";
 import { UserPosts } from "./Posts/UserPosts";
 import { AddNewUser } from "./UserProfiles/AddUserProfile";
 import Splash from "./Splash";
+import { PostSearch } from "./Posts/PostSearch";
 
 
 export default function ApplicationViews({ isLoggedIn, isAdmin }) {
@@ -30,6 +31,8 @@ return (
         <Route path="/post/:id" element={<PostDetails />} />
         <Route path="/post/edit/:postId" element={<EditPost />} />
         <Route path="/my-posts" element={<UserPosts />} />
+        <Route path="/post/search" element={<PostSearch />} />
+
 
         <Route path="*" element={<p>Whoops, nothing here...</p>} />
         

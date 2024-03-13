@@ -50,6 +50,14 @@ export const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 							</NavLink>
 						</NavItem>
 						<NavItem>
+							<NavLink tag={RRNavLink} to='/post/search' className="text-white">
+							<h4>
+							Search
+							</h4>
+							</NavLink>
+						</NavItem>
+
+						<NavItem>
 							<NavLink tag={RRNavLink} to='/userprofiles' className="text-white">
 							<h4>
 							Users

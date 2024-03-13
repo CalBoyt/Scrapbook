@@ -83,6 +83,13 @@ namespace Scrapbook.Controllers
             return NoContent();
         }
 
+        //GET that searches for post with matching keyword, based on a string criterion
+        [HttpGet("search")]
+        public IActionResult Search(string q, bool sortDesc)
+        {
+            return Ok(_postRepository.Search(q, sortDesc));
+        }
+
 
     }
 }

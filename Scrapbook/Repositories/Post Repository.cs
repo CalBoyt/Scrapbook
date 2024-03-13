@@ -338,5 +338,71 @@ namespace Scrapbook.Repositories
                 }
             }
         }
+
+        public List<Post> Search(string criterion, bool sortDescending)
+        {
+            using (var  conn = Connection)
+            {
+                conn.Open();
+                using (var cmd = conn.CreateCommand())
+                {
+                    var sql =
+                        @" 
+                        SELECT p.Id AS PostId, p.Title, p.Content, p.Image1, p.Image2, p.Image3, p.Image4, p.Caption1, p.Caption2, p.Caption3, p.Caption4, p.DateCreated,
+    
+                                c.Id AS CategoryId, c.Name AS CategoryName,
+                                
+                                up.Id AS AuthorId, up.Name AS AuthorName, up.Email, up.ImageLocation AS AuthorImage
+
+                        FROM Post p
+                        LEFT JOIN Category c ON p.CategoryId = c.id
+                        LEFT JOIN UserProfile up ON p.UserProfileId = up.id
+                        WHERE p.Title LIKE @Criterion OR p.Content LIKE @Criterion OR c.[Name] LIKE @Criterion
+                        ORDER BY p.DateCreated DESC
+                        ";
+
+                    cmd.CommandText = sql;
+                    DbUtils.AddParameter(cmd, "@Criterion", $"%{criterion}%");
+                    var reader = cmd.ExecuteReader();
+
+                    var posts = new List<Post>();
+                    while (reader.Read())
+                    {
+                        posts.Add(new Post()
+                        {
+                            Id = DbUtils.GetInt(reader, "PostId"),
+                            Title = DbUtils.GetString(reader, "Title"),
+                            Content = DbUtils.GetString(reader, "Content"),
+                            Image1 = DbUtils.GetString(reader, "Image1"),
+                            Image2 = DbUtils.GetString(reader, "Image2"),
+                            Image3 = DbUtils.GetString(reader, "Image3"),
+                            Image4 = DbUtils.GetString(reader, "Image4"),
+                            Caption1 = DbUtils.GetString(reader, "Caption1"),
+                            Caption2 = DbUtils.GetString(reader, "Caption2"),
+                            Caption3 = DbUtils.GetString(reader, "Caption3"),
+                            Caption4 = DbUtils.GetString(reader, "Caption4"),
+                            DateCreated = DbUtils.GetDateTime(reader, "DateCreated"),
+                            CategoryId = DbUtils.GetInt(reader, "CategoryId"),
+                            Category = new Category()
+                            {
+                                Id = DbUtils.GetInt(reader, "CategoryId"),
+                                Name = DbUtils.GetString(reader, "CategoryName")
+                            },
+                            UserProfileId = DbUtils.GetInt(reader, "AuthorId"),
+                            UserProfile = new UserProfile()
+                            {
+                                Id = DbUtils.GetInt(reader, "AuthorId"),
+                                Name = DbUtils.GetString(reader, "AuthorName"),
+                                Email = DbUtils.GetString(reader, "Email"),
+                                ImageLocation = DbUtils.GetString(reader, "AuthorImage")
+                            }
+                        });
+                    }
+                    reader.Close();
+
+                    return posts;
+                }
+            }
+        }
     }
 }

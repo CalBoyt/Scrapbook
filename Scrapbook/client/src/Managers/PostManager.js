@@ -44,4 +44,11 @@ export const deletePost = (id) => {
       body: JSON.stringify(post),
     });
   };
+
+  // https://localhost:5001/api/Post/search?q=stop&sortDesc=true
+export const SearchPosts = (searchTerm) => {
+  return fetch(`${baseUrl}/search?q=${searchTerm}&sortDesc=true`)
+  .then((res) => res.json())
+}
+
   
