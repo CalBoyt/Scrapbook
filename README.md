@@ -28,10 +28,3 @@ Scrapbook has two types of users:
 5. Create the Scrapbook database by running the SQLCreateDatabase.sql script.
 6. Add seed data by running the SQLSeedData.sql script.
 7. Use the admin email address to log in: cal@email.com.
-
---
-Caleen Boyter
-Junior Full Stack Developer
-Personal Cell: 801-885-0826
-
-I love to help craft powerful solutions that bring people together
