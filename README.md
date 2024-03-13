@@ -1,5 +1,5 @@
 # Scrapbook
-![Scrapbook](https://github.com/CalBoyt/Scrapbook/assets/143360446/09fe5ba2-9b35-4579-9840-1e23211cc7c1)
+![Scrapbook](https://github.com/CalBoyt/Scrapbook/assets/143360446/ec6796a1-ecb6-46a1-a05e-77e5b16bc777)
 
 ## Overview
 
