@@ -1,0 +1,3 @@
+﻿set identity_insert [Post] on
+insert into Post (Id, Title, Content, DateCreated, Image1, Caption1, Image2, Image3, Image4, CategoryId, UserProfileId) values (9, 'Strawberry Reservoir', 'We had a blast at Strawberry Reservoir in July. We camped in Grandpa’s motorhome, rode the trails on the 4-wheelers, and played in the lake. Grandpa drove the boat and tried to knock us off the tube when we were tubing. We cooked eggs and bacon on the griddle for breakfast and burgers at night. We played a lot of cards after the sun went down. There’s nothing like these special times together!', '2012-07-12', '../../Images/2013SLake1.jpg', 'Fun on the Boat', '../../Images/Lake2.jpg', '../../Images/2013SLake3.jpg', '../../Images/2013SLake4.jpg', 8, 1);  
+set identity_insert [Post] off;
