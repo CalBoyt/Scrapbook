@@ -72,10 +72,10 @@ export const PostForm = () => {
 	};
 
     return(
-        <div className="bg-success bg-opacity-25">
+        <div className="bg-success bg-opacity-25 p-5">
 
         <Container >
-            <h1 className='pt-5 pb-3 text-danger'>Create a New Post</h1>
+            <h1 className='p-5 pb-3 text-danger'>Create a New Scrap</h1>
 			<Form >
 				<FormGroup className='mb-4'>
 					<Label for='title'>Title:</Label>
@@ -250,10 +250,10 @@ export const PostForm = () => {
                     />
                 </FormGroup>
 				<Button
-					color='primary'
+					color='success'
 					className='me-2'
                     onClick={(clickEvent) => clickTheSaveButton(clickEvent)} 
-                    >Submit Post				
+                    >Submit Scrap				
                 </Button>
 				<Button
 					outline

@@ -76,6 +76,7 @@ export const AddNewUser = () => {
                             />
                         </FormGroup>
                         <Button 
+                        color="success"
                         onClick={(clickEvent) => clickSaveButton(clickEvent)}>
                         Save New User
                         </Button>

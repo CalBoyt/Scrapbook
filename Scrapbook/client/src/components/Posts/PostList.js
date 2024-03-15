@@ -15,7 +15,7 @@ const PostList = () => {
   return (
     <>
     <div className="bg-success bg-opacity-25">
-    <h1 className="pt-5 text-danger">All Posts</h1>
+    <h1 className="pt-5 text-danger">All Scraps</h1>
     <div className="container ">
       <div className="row justify-content-center">
         <div className="cards-column row justify-content-center">

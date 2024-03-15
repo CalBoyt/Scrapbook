@@ -83,9 +83,9 @@ export const EditPost = () => {
 
 
     return(
-		<div className="bg-success bg-opacity-25">
+		<div className="bg-success bg-opacity-25 p-5">
         <Container>
-			<h1 className='my-4 text-danger'>Edit your post below</h1>
+			<h1 className='my-4 text-danger'>Edit Your Scrap Below</h1>
 
 			<Form >
 				<FormGroup className='mb-4'>

@@ -24,9 +24,9 @@ export const PostSearch = () => {
     }
 
     return (
-        <div className="bg-success bg-opacity-25">
+        <div className="bg-success bg-opacity-25 p-5">
             <Container>
-            <h1 className='pt-5 pb-3 text-danger'>Search for Keyword:</h1>
+            <h1 className='pt-5 pb-5 text-danger'>Search Scraps by Keyword:</h1>
 
                 <Form >
                     <FormGroup >
@@ -37,12 +37,12 @@ export const PostSearch = () => {
                         type="text" value={search} onChange={searchOnChange} />
                     </FormGroup>
                     <Button 
-					color='primary'
+					color='success'
 					className='mb-3 p-3 me-2'
                         onClick={searchOnClick}>Search</Button>
                 </Form>
-                <h3>
-                    Search Results:
+                <h3 className="mb-3 p-3">
+                    Search Results Below:
                     {searchResults.map((post) =>
                         <>
                             <Post key={post.id} post={post} />

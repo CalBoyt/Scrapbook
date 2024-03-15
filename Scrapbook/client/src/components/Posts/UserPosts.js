@@ -21,7 +21,7 @@ export const UserPosts = () => {
     return (
     <>
         <div className="bg-success bg-opacity-25">
-            <h1 className='pt-5 text-danger'>My Posts</h1>
+            <h1 className='pt-5 text-danger'>My Scraps</h1>
                 <div className="post-list">
                 <div className="row justify-content-center">
                     <div className="cards-column row justify-content-center">
