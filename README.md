@@ -25,6 +25,6 @@ Scrapbook has two types of users:
    
    ```
 4. Open and launch the Scrapbook.sln file in Visual Studio Community.  
-5. Create the Scrapbook database by running the SQLCreateDatabase.sql script.
-6. Add seed data by running the SQLSeedData.sql script.
+5. Create the Scrapbook database by running the SQLCreateDatabase.sql script in the SQL folder.
+6. Add seed data by running the SQLSeedData.sql script in the SQL folder.
 7. Use the admin email address to log in: cal@email.com.
