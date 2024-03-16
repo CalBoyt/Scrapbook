@@ -3,7 +3,7 @@
 
 ## Overview
 
-Scrapbook is a family app that allows users to interactively share memories, called scraps, with extended family. It features content search by keyword, GUID for each extended family, and full CRUD capability. Scrapbook is a full stack project in C#/.Net 8 and ReactJS using ASP.NET, Microsoft SQL Server with Web API.
+Scrapbook is a family app that allows users to interactively share memories, called scraps, with extended family. It features content search by keyword, login validation, admin functionality, GUID for each extended family, and full CRUD capability. Scrapbook is a full stack project in C#/.Net 8 and ReactJS using ASP.NET, Microsoft SQL Server with Web API.
 
 ## Users
 
