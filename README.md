@@ -7,10 +7,8 @@ Scrapbook is a family app that allows users to interactively share memories, cal
 
 ## ERD
 ![ScrapbookERD](https://github.com/CalBoyt/Scrapbook/assets/143360446/ae4fe54c-0066-4dbb-91d2-235a72c7155d)
-![ScrapbookERD](https://github.com/CalBoyt/Scrapbook/assets/143360446/ae4fe54c-0066-4dbb-91d2-235a72c7155d)
 
 ## Wireframe
-![ScrapbookMiroWireframe](https://github.com/CalBoyt/Scrapbook/assets/143360446/07c473ae-eb69-439e-8d0c-be7d8174cc95)
 ![ScrapbookMiroWireframe](https://github.com/CalBoyt/Scrapbook/assets/143360446/07c473ae-eb69-439e-8d0c-be7d8174cc95)
 
 ## Users
