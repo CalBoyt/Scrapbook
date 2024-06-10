@@ -6,7 +6,7 @@
 Scrapbook is a family app that allows users to interactively share memories, called scraps, with extended family. It features content search by keyword, login validation, admin functionality, GUID for each extended family, and full CRUD capability. Scrapbook is a full stack project in C#/.Net 8 and ReactJS using ASP.NET, Microsoft SQL Server with Web API.
 
 ## ERD
-![ScrapbookERD](https://github.com/CalBoyt/Scrapbook/assets/143360446/ae4fe54c-0066-4dbb-91d2-235a72c7155d)
+![ScrapbookERD](https://github.com/CalBoyt/Scrapbook/assets/143360446/db035df8-ab12-4193-9fc9-067ac2e42a3e)
 
 ## Wireframe
 ![ScrapbookMiroWireframe](https://github.com/CalBoyt/Scrapbook/assets/143360446/854a817a-b877-4377-a328-900bf50dda76)
